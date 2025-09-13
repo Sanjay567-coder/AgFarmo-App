@@ -1,0 +1,60 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-agfarmo-staging-114809-authRole",
+      "UnauthRoleArn": "arn:aws:iam::312098319465:role/amplify-agfarmo-staging-114809-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::312098319465:role/amplify-agfarmo-staging-114809-authRole",
+      "Region": "ap-south-1",
+      "DeploymentBucketName": "amplify-agfarmo-staging-114809-deployment",
+      "UnauthRoleName": "amplify-agfarmo-staging-114809-unauthRole",
+      "StackName": "amplify-agfarmo-staging-114809",
+      "StackId": "arn:aws:cloudformation:ap-south-1:312098319465:stack/amplify-agfarmo-staging-114809/119ce570-5a07-11ee-b330-020038e1fe14",
+      "AmplifyAppId": "dp0y0tbig4bmc"
+    }
+  },
+  "auth": {
+    "agfarmo": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "socialProviders": [],
+        "usernameAttributes": [],
+        "signupAttributes": [
+          "PREFERRED_USERNAME",
+          "NAME",
+          "EMAIL",
+          "PHONE_NUMBER"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 6,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-agfarmo-staging-114809-deployment/amplify-cfn-templates/auth/agfarmo-cloudformation-template.json",
+        "logicalId": "authagfarmo"
+      },
+      "lastPushTimeStamp": "2023-09-23T11:52:22.153Z",
+      "output": {
+        "CreatedSNSRole": "arn:aws:iam::312098319465:role/snsa152024e114809-staging",
+        "UserPoolId": "ap-south-1_zbOCF6Af9",
+        "AppClientIDWeb": "63e22h096kpfbsglb4gj48mmik",
+        "AppClientID": "24sd4e4k8h8ak0ue62tetnroml",
+        "IdentityPoolId": "ap-south-1:8e13bbf1-26e2-4187-b156-be2dc9681928",
+        "UserPoolArn": "arn:aws:cognito-idp:ap-south-1:312098319465:userpool/ap-south-1_zbOCF6Af9",
+        "IdentityPoolName": "testAuthIdentityPool__staging",
+        "UserPoolName": "agfarmo"
+      },
+      "lastPushDirHash": "aJD9/3/5m3b1Jme8+8NAZm8bCfU="
+    }
+  }
+}
