@@ -20,7 +20,7 @@ const ChatBotScreen = () => {
   const [messages, setMessages] = useState([]);
   const [inputText, setInputText] = useState('');
   const [loading, setLoading] = useState(false);
-  const PALM_API_KEY = 'AIzaSyAjp0SdIx30mtcO3WY5Km98qgGykuqFue0'; // Replace with your actual API key
+  const PALM_API_KEY = 'YOUR_API_KEY'; // Replace with your actual API key
   const navigation = useNavigation();
   const flatListRef = useRef(null);
   const [context, setContext] = useState('');
@@ -298,3 +298,4 @@ const styles = StyleSheet.create({
 });
 
 export default ChatBotScreen;
+
